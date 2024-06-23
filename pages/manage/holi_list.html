@@ -1,0 +1,287 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>SpeakingMax</title>
+
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/main_style.css" />
+
+    <!-- 공통 js -->
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js" th:src="@{/js/jquery-3.3.1.min.js}"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js" th:src="@{/js/jquery-ui.min.js}"></script>
+    <script type="text/javascript" src="../../js/script.js"></script>
+</head>
+
+<body>
+    <div class="menu_wrap">
+        <div class="menu_header">
+            <div class="left_wrap">
+                <label>스피킹맥스</label>
+            </div>
+            <div class="right_wrap">
+                <button class="angle-left"></button>
+                <button class="menu-burger"></button>
+            </div>
+        </div>
+        <div class="menu_body">
+            <div class="language">
+                <select>
+                    <option>영어</option>
+                    <option>중국어</option>
+                    <option>일본어</option>
+                    <option>한국어</option>
+                    <option>베트남어</option>
+                    <option>러시아어</option>
+                    <option>스페인어</option>
+                    <option>인도네시아어</option>
+                    <option>독일어</option>
+                    <option>프랑스어</option>
+                </select>
+            </div>
+            <div class="menu_list">
+                <ul class="menu_inner">
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">커뮤니티</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li class="active"><a href="#">관리자게시판</a></li>
+                                <li><a href="#">요청게시판(Q&A)</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">공지사항(KSME)</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">회원관리</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">회원관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">레벨테스트</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">수강LT</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">스케줄관리</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">전체스케줄</a></li>
+                                <li><a href="#">수강중스케줄</a></li>
+                                <li><a href="#">보강스케줄</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">콜센터정보</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">스케줄관리</a></li>
+                                <li><a href="#">강사배정</a></li>
+                                <li><a href="#">강사관리</a></li>
+                                <li><a href="#">강사스케줄</a></li>
+                                <li><a href="#">보강스케줄</a></li>
+                                <li><a href="#">월평가</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">운영관리</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">LMS권한등급관리</a></li>
+                                <li><a href="#">업체등급관리</a></li>
+                                <li><a href="#">휴일관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">통계관리</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">출석관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">기타관리</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">외부과정관리</a></li>
+                                <li><a href="#">교재관리</a></li>
+                                <li><a href="#">조직관리</a></li>
+                                <li><a href="#">코드관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu_footer">
+            <span class="time">PM 18:11:57</span>
+            <span>2024.2.6(화)</span>
+        </div>
+    </div>
+    <div class="main_wrap">
+        <div class="table_header">
+            <div class="title">
+                <p>운영관리 / 휴일관리</p>
+            </div>
+            <div class="userInfo">
+                <p>이지원 본부장(admin)</p>
+                <button class="sign-out">로그아웃</button>
+            </div>
+        </div>
+        <div class="table_wrap">
+            <div class="search_wrap">
+                <div class="search_items_list">
+
+                    <div class="search_items">
+                        <label>휴일기간</label>
+                        <div class="item_list">
+                            <input type="date" max="9999-12-31"/>
+                            <span>~</span>
+                            <input type="date" max="9999-12-31"/>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="button_wrap">
+                    <button class="btn_search">검색</button>
+                </div>
+            </div>
+            <div class="list_wrap">
+                <div class="button_wrap">
+                    <div class="left_wrap">
+                    </div>
+                    <div class="right_wrap">
+                        <button class="color_type_5">휴일수정</button>
+                        <button class="color_type_2">휴일삭제</button>
+                        <button class="color_type_2">휴일등록</button>
+                    </div>
+                </div>
+
+                <table>
+                    <colgroup>
+                        <col width="42px" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="36px" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>휴일구분</th>
+                            <th>휴일일자</th>
+                            <th>설명</th>
+                            <th>등록일시</th>
+                            <th>
+                                <div class="checked_wrap">
+                                    <input type="checkbox" id="noLabel" class="no-label" />
+                                    <label for="noLabel">노라벨</label>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="active">
+                            <td>004</td>
+                            <td>휴일구분</td>
+                            <td>휴일일자</td>
+                            <td>설명</td>
+                            <td>등록일시</td>
+                            <td>
+                                <div class="checked_wrap">
+                                    <input type="checkbox" id="noLabel1" class="no-label" checked />
+                                    <label for="noLabel1">노라벨</label>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>003</td>
+                            <td>휴일구분</td>
+                            <td>휴일일자</td>
+                            <td>설명</td>
+                            <td>등록일시</td>
+                            <td>
+                                <div class="checked_wrap">
+                                    <input type="checkbox" id="noLabel1" class="no-label" />
+                                    <label for="noLabel1">노라벨</label>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>002</td>
+                            <td>휴일구분</td>
+                            <td>휴일일자</td>
+                            <td>설명</td>
+                            <td>등록일시</td>
+                            <td>
+                                <div class="checked_wrap">
+                                    <input type="checkbox" id="noLabel1" class="no-label" />
+                                    <label for="noLabel1">노라벨</label>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>001</td>
+                            <td>휴일구분</td>
+                            <td>휴일일자</td>
+                            <td>설명</td>
+                            <td>등록일시</td>
+                            <td>
+                                <div class="checked_wrap">
+                                    <input type="checkbox" id="noLabel1" class="no-label" />
+                                    <label for="noLabel1">노라벨</label>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <div class="navi_wrap">
+                    <button class="double-left">first</button>
+                    <button class="prev">prev</button>
+                    <ul>
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                    </ul>
+                    <button class="next">next</button>
+                    <button class="double-right">last</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

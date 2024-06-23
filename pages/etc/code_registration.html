@@ -1,0 +1,303 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>SpeakingMax</title>
+
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/main_style.css" />
+
+    <!-- 공통 js -->
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js" th:src="@{/js/jquery-3.3.1.min.js}"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js" th:src="@{/js/jquery-ui.min.js}"></script>
+    <script type="text/javascript" src="../../js/script.js"></script>
+
+    <!-- 에디터 -->
+    <link rel="stylesheet" href="../../js/editor/trumbowyg.min.css" />
+    <script type="text/javascript" src="../../js/editor/trumbowyg.min.js"></script>
+    <script type="text/javascript" src="../../js/editor/plugins/upload/trumbowyg.upload.min.js"></script>
+</head>
+
+<body>
+    <div class="menu_wrap">
+        <div class="menu_header">
+            <div class="left_wrap">
+                <label>스피킹맥스</label>
+            </div>
+            <div class="right_wrap">
+                <button class="angle-left"></button>
+                <button class="menu-burger"></button>
+            </div>
+        </div>
+        <div class="menu_body">
+            <div class="language">
+                <select>
+                    <option>영어</option>
+                    <option>중국어</option>
+                    <option>일본어</option>
+                    <option>한국어</option>
+                    <option>베트남어</option>
+                    <option>러시아어</option>
+                    <option>스페인어</option>
+                    <option>인도네시아어</option>
+                    <option>독일어</option>
+                    <option>프랑스어</option>
+                </select>
+            </div>
+            <div class="menu_list">
+                <ul class="menu_inner">
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">커뮤니티</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li class="active"><a href="#">관리자게시판</a></li>
+                                <li><a href="#">요청게시판(Q&A)</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">공지사항(KSME)</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">회원관리</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">회원관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">레벨테스트</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">수강LT</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">스케줄관리</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">전체스케줄</a></li>
+                                <li><a href="#">수강중스케줄</a></li>
+                                <li><a href="#">보강스케줄</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">콜센터정보</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">스케줄관리</a></li>
+                                <li><a href="#">강사배정</a></li>
+                                <li><a href="#">강사관리</a></li>
+                                <li><a href="#">강사스케줄</a></li>
+                                <li><a href="#">보강스케줄</a></li>
+                                <li><a href="#">월평가</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">운영관리</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">LMS권한등급관리</a></li>
+                                <li><a href="#">업체등급관리</a></li>
+                                <li><a href="#">휴일관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">통계관리</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">출석관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">기타관리</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">외부과정관리</a></li>
+                                <li><a href="#">교재관리</a></li>
+                                <li><a href="#">조직관리</a></li>
+                                <li><a href="#">코드관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu_footer">
+            <span class="time">PM 18:11:57</span>
+            <span>2024.2.6(화)</span>
+        </div>
+    </div>
+    <div class="main_wrap">
+        <div class="table_header">
+            <div class="title">
+                <p>기타관리 / <b>코드등록</b></p>
+            </div>
+            <div class="userInfo">
+                <p>이지원 본부장(admin)</p>
+                <button class="sign-out">로그아웃</button>
+            </div>
+        </div>
+
+        <div class="table_wrap">
+            <div class="search_wrap">
+                <div class="search_items_list type2">
+                    <div class="search_items">
+                        <label>수강과목</label>
+
+                        <div class="item_list">
+                            <select>
+                                <option value="">수강과목</option>
+                                <option>조직구분</option>
+                                <option>국가</option>
+                                <option>강사명</option>
+                                <option>업체명1</option>
+                                <option>업체명2</option>
+                                <option>수강과목</option>
+                                <option>지사</option>
+                                <option>등급</option>
+                                <option>레벨</option>
+                                <option>방식</option>
+                                <option>주</option>
+                                <option>분</option>
+                                <option>응시과목(IBT)</option>
+                                <option>과정(IBT)</option>
+                                <option>응시레벨(IBT)</option>
+                                <option>추가과정</option>
+                                <option>레벨,월평가 제목(toeic)</option>
+                                <option>Comment 제목(toeic)</option>
+                                <option>Comment 제목(opic)</option>
+                                <option>레벨,월평가 제목(opic)</option>
+                                <option>레벨,월평가 제목(gtelp)</option>
+                                <option>Comment 제목(gtelp)</option>
+                                <option>Comment 제목(let's speak)</option>
+                                <option>레벨,월평가 제목(let's speak)</label></option>
+                                <option>레벨,월평가 제목(ESPA)</option>
+                                <option>Comment 제목(ESPA)</option>
+                                <option>Comment 제목(TOEFL)</option>
+                                <option>레벨,월평가 제목(TOEFL)</option>
+                                <option>레벨,월평가 제목(IELTS)</option>
+                                <option>Comment 제목(IELTS)</option>
+                                <option>Comment 제목(EPTA)</option>
+                                <option>레벨,월평가 제목(EPTA)</option>
+                                <option>레벨,월평가 제목(Military English)</option>
+                                <option>Comment 제목(Military English)</option>
+                                <option>Comment 제목(ECL)</option>
+                                <option>레벨,월평가 제목(ECL)</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="search_items">
+                        <label>코드값</label>
+
+                        <div class="item_list">
+                            <div class="input_wrap">
+                                <input type="text" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search_items">
+                        <label>코드설명</label>
+
+                        <div class="item_list">
+                            <div class="input_wrap">
+                                <input type="text" />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="list_wrap">
+                <div class="button_wrap">
+                    <div class="left_wrap">
+                    </div>
+                    <div class="right_wrap">
+                        <button class="color_type_5">등록</button>
+                        <button>취소</button>
+                    </div>
+                </div>
+
+                <table>
+                    <colgroup>
+                        <col width="42px" />
+                        <col width="15%">
+                        <col width="20%">
+                        <col width="20%">
+                        <col width="10%">
+                        <col width="*">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>코드값</th>
+                            <th>코드설명</th>
+                            <th>등록일</th>
+                            <th>순서</th>
+                            <th>수정</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2</td>
+                            <td>코드값</td>
+                            <td>코드설명</td>
+                            <td>등록일</td>
+                            <td>▲ ▼</td>
+                            <td><button class="color_type_2">수정</button> <button class="color_type_5">삭제</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td>코드값</td>
+                            <td>코드설명</td>
+                            <td>등록일</td>
+                            <td>▲ ▼</td>
+                            <td><button class="color_type_2">수정</button> <button class="color_type_5">삭제</button></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <div class="navi_wrap">
+                    <button class="double-left">first</button>
+                    <button class="prev">prev</button>
+                    <ul>
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                    </ul>
+                    <button class="next">next</button>
+                    <button class="double-right">last</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

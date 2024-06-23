@@ -1,0 +1,481 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>SpeakingMax</title>
+
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/main_style.css" />
+
+    <!-- 공통 js -->
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js" th:src="@{/js/jquery-3.3.1.min.js}"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js" th:src="@{/js/jquery-ui.min.js}"></script>
+    <script type="text/javascript" src="../../js/script.js"></script>
+</head>
+
+<body>
+    <div class="menu_wrap">
+        <div class="menu_header">
+            <div class="left_wrap">
+                <label>스피킹맥스</label>
+            </div>
+            <div class="right_wrap">
+                <button class="angle-left"></button>
+                <button class="menu-burger"></button>
+            </div>
+        </div>
+        <div class="menu_body">
+            <div class="language">
+                <select>
+                    <option>영어</option>
+                    <option>중국어</option>
+                    <option>일본어</option>
+                    <option>한국어</option>
+                    <option>베트남어</option>
+                    <option>러시아어</option>
+                    <option>스페인어</option>
+                    <option>인도네시아어</option>
+                    <option>독일어</option>
+                    <option>프랑스어</option>
+                </select>
+            </div>
+            <div class="menu_list">
+                <ul class="menu_inner">
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">커뮤니티</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li class="active"><a href="#">관리자게시판</a></li>
+                                <li><a href="#">요청게시판(Q&A)</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">공지사항(KSME)</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">회원관리</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">회원관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">레벨테스트</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">수강LT</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">스케줄관리</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">전체스케줄</a></li>
+                                <li><a href="#">수강중스케줄</a></li>
+                                <li><a href="#">보강스케줄</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">콜센터정보</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">스케줄관리</a></li>
+                                <li><a href="#">강사배정</a></li>
+                                <li><a href="#">강사관리</a></li>
+                                <li><a href="#">강사스케줄</a></li>
+                                <li><a href="#">보강스케줄</a></li>
+                                <li><a href="#">월평가</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">운영관리</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">LMS권한등급관리</a></li>
+                                <li><a href="#">업체등급관리</a></li>
+                                <li><a href="#">휴일관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">통계관리</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">출석관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">기타관리</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">외부과정관리</a></li>
+                                <li><a href="#">교재관리</a></li>
+                                <li><a href="#">조직관리</a></li>
+                                <li><a href="#">코드관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu_footer">
+            <span class="time">PM 18:11:57</span>
+            <span>2024.2.6(화)</span>
+        </div>
+    </div>
+    <div class="main_wrap">
+        <div class="table_header">
+            <div class="title">
+                <p>콜센터정보 / 보강스케줄</p>
+            </div>
+            <div class="userInfo">
+                <p>이지원 본부장(admin)</p>
+                <button class="sign-out">로그아웃</button>
+            </div>
+        </div>
+        <div class="table_wrap">
+            <div class="search_wrap">
+                <div class="search_items_list">
+
+                    <div class="search_items">
+                        <label>조직구분</label>
+                        <div class="item_list">
+                            <select>
+                                <option value="">조직구분</option>
+                                <option value="c">Corporation[기업]</option>
+                                <option value="h">High School[고등학교]</option>
+                                <option value="i">Academy[학원]</option>
+                                <option value="j">개인/junior</option>
+                                <option value="m">Middle School[중학교]</option>
+                                <option value="p">Affiliate[제휴사]</option>
+                                <option value="s">개인/senior</option>
+                                <option value="u">University[대학교]</option>
+                                <option value="0">Experience class[체험수업]</option>
+                                <option value="t">Mock Test_모의시험</option>
+                            </select>
+
+                            <select>
+                                <option value="">상위업체</option>
+                            </select>
+
+                            <select>
+                                <option value="">하위업체</option>
+                            </select>
+
+                            <select>
+                                <option value="">지사</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="search_items">
+                        <label>분류</label>
+                        <div class="item_list">
+                            <select>
+                                <option value="">보강일자</option>
+                                <option value="1">평일</option>
+                                <option value="2">토요일</option>
+                            </select>
+
+                            <select>
+                                <option value="">관리등급</option>
+                                <option value="v">VVIP</option>
+                                <option value="s">SVIP</option>
+                                <option value="p">VIP</option>
+                                <option value="h">HR-S</option>
+                                <option value="r">HR</option>
+                                <option value="t">TC</option>
+                                <option value="c">CS-C</option>
+                                <option value="n">SC</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="search_items">
+                        <label>수업기간</label>
+                        <div class="item_list">
+                            <input type="date" max="9999-12-31"/>
+                            <span>~</span>
+                            <input type="date" max="9999-12-31"/>
+                        </div>
+                    </div>
+
+                    <div class="search_items">
+                        <label>수업시간</label>
+                        <div class="item_list">
+                            <select>
+                                <option value="">시</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                            </select>
+
+                            <select>
+                                <option value="">분</option>
+                                <option value="00">00</option>
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                            </select>
+
+                            <span>~</span>
+
+                            <select>
+                                <option value="">시</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                            </select>
+
+                            <select>
+                                <option value="">분</option>
+                                <option value="00">00</option>
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="search_items">
+                        <label>상세검색</label>
+                        <div class="item_list">
+                            <select>
+                                <option value="">상세검색</option>
+                                <option value="mastidno">회원명/아이디</option>
+                                <option value="masthp01">1차수업번호</option>
+                                <option value="masthp02">2차수업번호</option>
+                                <option value="cosetech">강사</option>
+                            </select>
+
+                            <input type="text" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="button_wrap">
+                    <button class="btn_search">검색</button>
+                </div>
+            </div>
+            <div class="list_wrap">
+                <div class="button_wrap">
+                    <div class="left_wrap">
+                        <button>엑셀저장</button>
+                        <button>SMS</button>
+                        <button>이메일</button>
+                    </div>
+                    <div class="right_wrap">
+                        <button class="color_type_2">보강신청취소</button>
+                    </div>
+                </div>
+
+                <table>
+                    <colgroup>
+                        <col width="42px" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="36px" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>조직구분</th>
+                            <th>회원명</th>
+                            <th>관리등급</th>
+                            <th>수업시간</th>
+                            <th>강사명</th>
+                            <th>수업형태</th>
+                            <th>교육과정</th>
+                            <th>수업번호</th>
+                            <th>정상수업일</th>
+                            <th>보강수업일</th>
+                            <th>평일/토요일</th>
+                            <th>출석부</th>
+                            <th>출결현황</th>
+                            <th>
+                                <div class="checked_wrap">
+                                    <input type="checkbox" id="noLabel" class="no-label" />
+                                    <label for="noLabel">노라벨</label>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="active">
+                            <td>004</td>
+                            <td>조직구분</td>
+                            <td>회원명</td>
+                            <td>관리등급</td>
+                            <td>수업시간</td>
+                            <td>강사명</td>
+                            <td>수업형태</td>
+                            <td>교육과정</td>
+                            <td>수업번호</td>
+                            <td>정상수업일</td>
+                            <td>보강수업일</td>
+                            <td>평일/토요일</td>
+                            <td><button class="calendar">캘린더</button></td>
+                            <td>출결현황</td>
+                            <td>
+                                <div class="checked_wrap">
+                                    <input type="checkbox" id="noLabel1" class="no-label" checked />
+                                    <label for="noLabel1">노라벨</label>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>003</td>
+                            <td>조직구분</td>
+                            <td>회원명</td>
+                            <td>관리등급</td>
+                            <td>수업시간</td>
+                            <td>강사명</td>
+                            <td>수업형태</td>
+                            <td>교육과정</td>
+                            <td>수업번호</td>
+                            <td>정상수업일</td>
+                            <td>보강수업일</td>
+                            <td>평일/토요일</td>
+                            <td><button class="calendar">캘린더</button></td>
+                            <td>출결현황</td>
+                            <td>
+                                <div class="checked_wrap">
+                                    <input type="checkbox" id="noLabel1" class="no-label" />
+                                    <label for="noLabel1">노라벨</label>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>002</td>
+                            <td>조직구분</td>
+                            <td>회원명</td>
+                            <td>관리등급</td>
+                            <td>수업시간</td>
+                            <td>강사명</td>
+                            <td>수업형태</td>
+                            <td>교육과정</td>
+                            <td>수업번호</td>
+                            <td>정상수업일</td>
+                            <td>보강수업일</td>
+                            <td>평일/토요일</td>
+                            <td><button class="calendar">캘린더</button></td>
+                            <td>출결현황</td>
+                            <td>
+                                <div class="checked_wrap">
+                                    <input type="checkbox" id="noLabel1" class="no-label" />
+                                    <label for="noLabel1">노라벨</label>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>001</td>
+                            <td>조직구분</td>
+                            <td>회원명</td>
+                            <td>관리등급</td>
+                            <td>수업시간</td>
+                            <td>강사명</td>
+                            <td>수업형태</td>
+                            <td>교육과정</td>
+                            <td>수업번호</td>
+                            <td>정상수업일</td>
+                            <td>보강수업일</td>
+                            <td>평일/토요일</td>
+                            <td><button class="calendar">캘린더</button></td>
+                            <td>출결현황</td>
+                            <td>
+                                <div class="checked_wrap">
+                                    <input type="checkbox" id="noLabel1" class="no-label" />
+                                    <label for="noLabel1">노라벨</label>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <div class="navi_wrap">
+                    <button class="double-left">first</button>
+                    <button class="prev">prev</button>
+                    <ul>
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                    </ul>
+                    <button class="next">next</button>
+                    <button class="double-right">last</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

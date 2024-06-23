@@ -1,0 +1,627 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="/common/css/login.css" />
+  <link rel="stylesheet" href="/common/css/css.css" type="text/css" />
+  <title>SpeakingMax</title>
+
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/main_style.css" />
+
+  <!-- 공통 js -->
+  <script type="text/javascript" src="../../js/jquery-3.3.1.min.js" th:src="@{/js/jquery-3.3.1.min.js}"></script>
+  <script type="text/javascript" src="../../js/jquery-ui.min.js" th:src="@{/js/jquery-ui.min.js}"></script>
+  <script type="text/javascript" src="../../js/script.js"></script>
+</head>
+
+<body>
+  <div class="menu_wrap">
+    <div class="menu_header">
+      <div class="left_wrap">
+        <label>스피킹맥스</label>
+      </div>
+      <div class="right_wrap">
+        <button class="angle-left"></button>
+        <button class="menu-burger"></button>
+      </div>
+    </div>
+    <div class="menu_body">
+      <div class="language">
+        <select>
+          <option>영어</option>
+          <option>중국어</option>
+          <option>일본어</option>
+          <option>한국어</option>
+          <option>베트남어</option>
+          <option>러시아어</option>
+          <option>스페인어</option>
+          <option>인도네시아어</option>
+          <option>독일어</option>
+          <option>프랑스어</option>
+        </select>
+      </div>
+      <div class="menu_list">
+        <ul class="menu_inner">
+          <li>
+            <em class="arrow"></em>
+            <a href="#">커뮤니티</a>
+            <div class="menu_sub">
+              <ul class="sub_inner">
+                <li class="active"><a href="#">관리자게시판</a></li>
+                <li><a href="#">요청게시판(Q&A)</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">공지사항(KSME)</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <em class="arrow"></em>
+            <a href="#">회원관리</a>
+            <div class="menu_sub">
+              <ul class="sub_inner">
+                <li><a href="#">회원관리</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <em class="arrow"></em>
+            <a href="#">레벨테스트</a>
+            <div class="menu_sub">
+              <ul class="sub_inner">
+                <li><a href="#">수강LT</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <em class="arrow"></em>
+            <a href="#">스케줄관리</a>
+            <div class="menu_sub">
+              <ul class="sub_inner">
+                <li><a href="#">전체스케줄</a></li>
+                <li><a href="#">수강중스케줄</a></li>
+                <li><a href="#">보강스케줄</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <em class="arrow"></em>
+            <a href="#">콜센터정보</a>
+            <div class="menu_sub">
+              <ul class="sub_inner">
+                <li><a href="#">스케줄관리</a></li>
+                <li><a href="#">강사배정</a></li>
+                <li><a href="#">강사관리</a></li>
+                <li><a href="#">강사스케줄</a></li>
+                <li><a href="#">보강스케줄</a></li>
+                <li><a href="#">월평가</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <em class="arrow"></em>
+            <a href="#">운영관리</a>
+            <div class="menu_sub">
+              <ul class="sub_inner">
+                <li><a href="#">LMS권한등급관리</a></li>
+                <li><a href="#">업체등급관리</a></li>
+                <li><a href="#">휴일관리</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <em class="arrow"></em>
+            <a href="#">통계관리</a>
+            <div class="menu_sub">
+              <ul class="sub_inner">
+                <li><a href="#">출석관리</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <em class="arrow"></em>
+            <a href="#">기타관리</a>
+            <div class="menu_sub">
+              <ul class="sub_inner">
+                <li><a href="#">외부과정관리</a></li>
+                <li><a href="#">교재관리</a></li>
+                <li><a href="#">조직관리</a></li>
+                <li><a href="#">코드관리</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="menu_footer">
+      <span class="time">PM 18:11:57</span>
+      <span>2024.2.6(화)</span>
+    </div>
+  </div>
+  <div class="main_wrap">
+    <div class="table_header">
+      <div class="title">
+        <p>홈 / 요청사항</p>
+      </div>
+      <div class="userInfo">
+        <p>이지원 본부장(admin)</p>
+        <button class="sign-out">로그아웃</button>
+      </div>
+    </div>
+    <div class="table_wrap">
+      <div class="search_wrap">
+        <div class="search_items_list">
+          <div class="search_items">
+            <label>조직구분</label>
+            <div class="item_list">
+              <select>
+                <option value="">조직구분</option>
+              </select>
+
+              <select>
+                <option value="">상위업체</option>
+              </select>
+
+              <select>
+                <option value="">하위업체</option>
+              </select>
+
+              <select>
+                <option value="">지사</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="search_items">
+            <label>분류</label>
+            <div class="item_list">
+              <select>
+                <option value="">처리상태</option>
+                <option value="0">접수대기</option>
+                <option value="1">접수완료</option>
+                <option value="2">진행중</option>
+                <option value="3">보류</option>
+                <option value="4">처리불가</option>
+                <option value="5">처리완료</option>
+              </select>
+
+              <select>
+                <option value="" selected="">접수유형</option>
+                <option value="srt1">수업관련</option>
+                <option value="srt2">강사관련</option>
+                <option value="srt3">교육관련</option>
+                <option value="srt4">정보변경관련</option>
+                <option value="srt5">환경관련</option>
+                <option value="srt6">고객센터</option>
+                <option value="srt7">기타</option>
+              </select>
+
+              <select>
+                <option value="">상세유형</option>
+              </select>
+
+              <select>
+                <option value="">수강과목</option>
+                <option value="01">Parlons Francais 1권</option>
+                <option value="02">프랑스어 첫걸음의 모든 것</option>
+                <option value="03">일반회화</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="search_items">
+            <label>일자</label>
+            <div class="item_list">
+              <select>
+                <option value="">선택하세요</option>
+                <option value="rdat">작성일자</option>
+                <option value="acdt">처리일자</option>
+              </select>
+
+              <input type="date" max="9999-12-31"/>
+              <span>~</span>
+              <input type="date" max="9999-12-31"/>
+            </div>
+          </div>
+
+          <div class="search_items">
+            <label>상세검색</label>
+            <div class="item_list">
+              <select>
+                <option value="">선택하세요</option>
+                <option value="idno">회원명/아이디</option>
+                <option value="tech">강사</option>
+              </select>
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+
+        <div class="button_wrap">
+          <button class="btn_search">검색</button>
+        </div>
+      </div>
+      <div class="list_wrap">
+        <div class="button_wrap">
+          <div class="left_wrap"></div>
+          <div class="right_wrap">
+            <button>엑셀저장</button>
+          </div>
+        </div>
+
+        <table>
+          <colgroup>
+            <col width="42px" />
+            <col width="5%" />
+            <col width="4%" />
+            <col width="4%" />
+            <col width="6%" />
+            <col width="7%" />
+            <col width="4%" />
+            <col width="6%" />
+            <col width="8%" />
+            <col width="4%" />
+            <col width="4%" />
+            <col width="7%" />
+            <col width="*%" />
+            <col width="4%" />
+            <col width="4%" />
+            <col width="4%" />
+            <col width="7%" />
+            <col width="7%" />
+          </colgroup>
+          <thead>
+            <th>No</th>
+            <th>상위업체</th>
+            <th>하위업체</th>
+            <th>아이디</th>
+            <th>회원명</th>
+            <th>수업번호</th>
+            <th>수업시간</th>
+            <th>강사명</th>
+            <th>수강과목</th>
+            <th>수업형태</th>
+            <th>접수유형</th>
+            <th>항목</th>
+            <th>제목</th>
+            <th>처리상태</th>
+            <th>작성자</th>
+            <th>처리자</th>
+            <th>작성일시</th>
+            <th>처리일시</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>001</td>
+              <td>상위업체</td>
+              <td>하위업체</td>
+              <td>아이디</td>
+              <td>회원명</td>
+              <td>수업번호</td>
+              <td>수업시간</td>
+              <td>강사명</td>
+              <td>수강과목</td>
+              <td>수업형태</td>
+              <td>접수유형</td>
+              <td>항목</td>
+              <td>제목</td>
+              <td>처리상태</td>
+              <td>작성자</td>
+              <td>처리자</td>
+              <td>2024-02-26</td>
+              <td>2024-02-26</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="navi_wrap">
+          <button class="double-left">first</button>
+          <button class="prev">prev</button>
+          <ul>
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+          </ul>
+          <button class="next">next</button>
+          <button class="double-right">last</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 최하단에 아래와 같이 popup레이어 추가해서 사용 -->
+  <div class="dim_layer">
+    <div class="dimBg"></div>
+    <div class="popup_layer layer2">
+      <div class="popup_title">
+        <label>나의 강의실</label>
+        <button class="popup_close"></button>
+      </div>
+      <div class="popup_menu_wrap">
+        <ul class="popup_title_menu">
+          <li class="active">학습코스</li>
+          <li>공지사항</li>
+          <li>요청게시판</li>
+          <li>교재보기</li>
+        </ul>
+      </div>
+      <div class="popup_explain_wrap">
+        <div class="popup_explain">
+          <div class="popup_circle"></div>
+          <p>전화교육 고객센터</p>
+          <p class="tel_bold">1666-0512</p>
+          <p class="time_bold">
+            (09:00~18:00,근무시간 내에 요청사항 및 문의사항을 접수시켜 주셔야
+            확인가능)
+          </p>
+        </div>
+      </div>
+      <div class="black_title">
+        <p>Business English for University Staff[대학직무영어] 1단계1</p>
+      </div>
+      <div class="select_box">
+        <select>
+          <option value="">
+            Business English for University Staff[대학직무영어] 1단계1
+            (2023-11-08~2024-05-13-수강중)
+          </option>
+          <option value="">
+            Business English for University Staff[대학직무영어] 1단계1
+            (2023-11-08~2024-05-13-수강중)
+          </option>
+          <option value="">
+            Business English for University Staff[대학직무영어] 1단계1
+            (2023-11-08~2024-05-13-수강중)
+          </option>
+        </select>
+      </div>
+      <div class="couse_table_wrap">
+        <table>
+          <tbody>
+            <tr>
+              <td>회원명</td>
+              <td>정승현</td>
+              <td>수업번호</td>
+              <td>010-1234-1234</td>
+            </tr>
+            <tr>
+              <td>강사명</td>
+              <td>Mitch</td>
+              <td>LEVEL</td>
+              <td>1단계1</td>
+            </tr>
+            <tr>
+              <td>학습시간</td>
+              <td>06:30</td>
+              <td>학습기간</td>
+              <td>2023-11-30~2024-05-14</td>
+            </tr>
+            <tr>
+              <td>평가학습결과확인</td>
+              <td>
+                <p class="course_red">Result Report ></p>
+              </td>
+              <td>녹음파일확인</td>
+              <td>
+                <div class="course_rec">
+                  <p class="course_red">Result Report ></p>
+                  <p class="course_blue">Video Start ></p>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- <progress class="progress" data-label="진도율 40%" value="40" min="0" max="100"></progress> -->
+        <div class="progress">
+          <div>
+            <!-- 확률은 스타일 %로 조절 -->
+            <p class="ubar" style="width: 46%"><span>진도율46%</span></p>
+          </div>
+        </div>
+
+        <div class="progress_explain">
+          <p>0%</p>
+          <p>
+            ※ 보여지는 진도율은 보강수업이 있는 경우 진도율 수치가 안맞는
+            경우가 있으며, 수업종료가 되면 정확한 진도율을 CS관리자가 직접
+            확인후 교육팀에 보고하니 걱정 안하셔도 됩니다.
+          </p>
+          <p>100%</p>
+        </div>
+
+        <div class="schedule">
+          <div class="schdule_title">
+            <img src="../../images/caret-left.png" alt="left arrow" />
+            <span>2024년 2월</span>
+            <img src="../../images/caret-right.png" alt="right arrow" />
+          </div>
+          <table class="schdule_cal">
+            <thead>
+              <tr>
+                <th class="col_red">SUN</th>
+                <th>MON</th>
+                <th>TUE</th>
+                <th>WED</th>
+                <th>THE</th>
+                <th>FRI</th>
+                <th class="col_blue">SAT</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>28</td>
+                <td>
+                  29
+                  <div class="blue_box">출석</div>
+                  <p>Mitch 06:30</p>
+                </td>
+                <td>
+                  30
+                  <div class="secondary_box">연기신청</div>
+                  <div class="white_box">수업예정</div>
+                  <p>USA_Sonnie</p>
+                  <p>20:50</p>
+                </td>
+                <td>31</td>
+                <td>1</td>
+                <td>
+                  2
+                  <div class="gray_box">결석</div>
+                  <p>Mitch 06:30</p>
+                </td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>
+                  5
+                  <div class="blue_box">출석</div>
+                  <p>Mitch 06:30</p>
+                </td>
+                <td>
+                  6
+                  <div class="green_box">보강확인</div>
+                  <div class="white_box">수업예정</div>
+                  <p>Mitch 06:30</p>
+                </td>
+                <td>7</td>
+                <td>8</td>
+                <td>
+                  9
+                  <div class="gray_box">결석</div>
+                  <p>Mitch 06:30</p>
+                </td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>
+                  12
+                  <div class="blue_box">출석</div>
+                  <p>Mitch 06:30</p>
+                </td>
+                <td>
+                  13
+                  <div class="point_box">보강완료</div>
+                  <div class="white_box">수업예정</div>
+                  <p>Mitch 06:30</p>
+                </td>
+                <td>14</td>
+                <td>15</td>
+                <td>
+                  16
+                  <div class="gray_box">결석</div>
+                  <p>Mitch 06:30</p>
+                </td>
+                <td>17</td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>
+                  19
+                  <div class="blue_box">출석</div>
+                  <p>Mitch 06:30</p>
+                </td>
+                <td>
+                  20
+                  <div class="block_box">Monthly Test</div>
+                  <p>Mitch 06:30</p>
+                </td>
+                <td>21</td>
+                <td>22</td>
+                <td>
+                  23
+                  <div class="gray_box">결석</div>
+                  <p>Mitch 06:30</p>
+                </td>
+                <td>24</td>
+              </tr>
+              <tr>
+                <td>25</td>
+                <td>
+                  26
+                  <div class="blue_box">출석</div>
+                  <p>Mitch 06:30</p>
+                </td>
+                <td>
+                  27
+                  <div class="secondary_box">연기신청</div>
+                  <div class="white_box">수업예정</div>
+                  <p>Mitch 06:30</p>
+                </td>
+                <td>28</td>
+                <td>29</td>
+                <td>
+                  1
+                  <div class="gray_box">결석</div>
+                  <p>Mitch 06:30</p>
+                </td>
+                <td>2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="delay">
+          <div class="delay_text">
+            <span>수업연기내역</span>
+            <p>※ 연기가능 횟수 총 3회입니다.(학습자 요청에 의한 내역만 횟수에 포함됩니다.)</p>
+          </div>
+          <table>
+            <thead>
+              <th>연기신청일</th>
+              <th>연기신청일</th>
+              <th>연기신청일</th>
+              <th>연기신청일</th>
+              <th>연기신청일</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2023-02-12</td>
+                <td>2023-02-12</td>
+                <td>19시 30분</td>
+                <td>Mitch</td>
+                <td>Complete</td>
+              </tr>
+              <tr>
+                <td>2023-02-12</td>
+                <td>2023-02-12</td>
+                <td>19시 30분</td>
+                <td>Mitch</td>
+                <td>Complete</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="navi_wrap">
+            <button class="double-left">first</button>
+            <button class="prev">prev</button>
+            <ul>
+              <li class="active">1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li>10</li>
+            </ul>
+            <button class="next">next</button>
+            <button class="double-right">last</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

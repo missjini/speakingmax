@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="kod">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpeakingMax</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/main_style.css" />
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css" />
+  <link rel="stylesheet" href="../../css/pub.css" />
+
+  <!-- 공통 js -->
+  <script type="text/javascript" src="../../js/jquery-3.3.1.min.js" th:src="@{/js/jquery-3.3.1.min.js}"></script>
+  <script type="text/javascript" src="../../js/jquery-ui.min.js" th:src="@{/js/jquery-ui.min.js}"></script>
+  <script type="text/javascript" src="../../js/script.js"></script>
+
+</head>
+
+<body class="pub">
+  <div class="menu_wrap">
+    <div class="menu_header">
+      <div class="left_wrap">
+        <label>스피킹맥스</label>
+      </div>
+      <div class="right_wrap">
+        <button class="angle-left"></button>
+        <button class="menu-burger"></button>
+      </div>
+    </div>
+    <div class="menu_body">
+      <div class="language">
+        <select>
+          <option>영어</option>
+          <option>중국어</option>
+          <option>일본어</option>
+          <option>한국어</option>
+          <option>베트남어</option>
+          <option>러시아어</option>
+          <option>스페인어</option>
+          <option>인도네시아어</option>
+          <option>독일어</option>
+          <option>프랑스어</option>
+        </select>
+      </div>
+      <div class="menu_list">
+        <ul class="menu_inner">
+          <li>
+            <em class="arrow"></em>
+            <a href="#">커뮤니티</a>
+            <div class="menu_sub">
+              <ul class="sub_inner">
+                <li class="active"><a href="#">관리자게시판</a></li>
+                <li><a href="#">요청게시판(Q&A)</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">공지사항(KSME)</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <em class="arrow"></em>
+            <a href="#">회원관리</a>
+            <div class="menu_sub">
+              <ul class="sub_inner">
+                <li><a href="#">회원관리</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <em class="arrow"></em>
+            <a href="#">레벨테스트</a>
+            <div class="menu_sub">
+              <ul class="sub_inner">
+                <li><a href="#">수강LT</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <em class="arrow"></em>
+            <a href="#">스케줄관리</a>
+            <div class="menu_sub">
+              <ul class="sub_inner">
+                <li><a href="#">전체스케줄</a></li>
+                <li><a href="#">수강중스케줄</a></li>
+                <li><a href="#">보강스케줄</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <em class="arrow"></em>
+            <a href="#">콜센터정보</a>
+            <div class="menu_sub">
+              <ul class="sub_inner">
+                <li><a href="#">스케줄관리</a></li>
+                <li><a href="#">강사배정</a></li>
+                <li><a href="#">강사관리</a></li>
+                <li><a href="#">강사스케줄</a></li>
+                <li><a href="#">보강스케줄</a></li>
+                <li><a href="#">월평가</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <em class="arrow"></em>
+            <a href="#">운영관리</a>
+            <div class="menu_sub">
+              <ul class="sub_inner">
+                <li><a href="#">LMS권한등급관리</a></li>
+                <li><a href="#">업체등급관리</a></li>
+                <li><a href="#">휴일관리</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <em class="arrow"></em>
+            <a href="#">통계관리</a>
+            <div class="menu_sub">
+              <ul class="sub_inner">
+                <li><a href="#">출석관리</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <em class="arrow"></em>
+            <a href="#">기타관리</a>
+            <div class="menu_sub">
+              <ul class="sub_inner">
+                <li><a href="#">외부과정관리</a></li>
+                <li><a href="#">교재관리</a></li>
+                <li><a href="#">조직관리</a></li>
+                <li><a href="#">코드관리</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="menu_footer">
+      <span class="time">PM 18:11:57</span>
+      <span>2024.2.6(화)</span>
+    </div>
+  </div>
+  <div class="main_wrap">
+    <form>
+      <div>
+        <fieldset>
+          <!-- 라디오 버튼  -->
+          <div class="section radio_section">
+            <div class="radio_wrap">
+              <input type="radio" name="no-label" />
+            </div>
+            <div class="radio_wrap">
+              <input type="radio" name="no-label" />
+            </div>
+
+            <div class="radio_wrap">
+              <input type="radio" id="ex_rd" name="ex_rds" />
+              <label for="ex_rd">Label </label>
+            </div>
+            <div class="radio_wrap">
+              <input type="radio" id="ex_rd2" name="ex_rds" />
+              <label for="ex_rd2">Label</label>
+            </div>
+          </div>
+
+          <!-- 체크박스 -->
+          <div class="section check_section">
+            <div class="checked_wrap">
+              <input type="checkbox" id="checkbox-id" />
+              <label for="checkbox-id"> 체크박스 </label>
+            </div>
+            <div class="checked_wrap">
+              <input type="checkbox" id="noLabel" class="no-label" />
+              <label for="noLabel">노라벨</label>
+            </div>
+          </div>
+
+          <!-- input Text -->
+          <div class="section text_section">
+            <div class="input_wrap">
+              <label>Label</label>
+              <input type="text" />
+            </div>
+          </div>
+
+          <!-- 버튼 -->
+          <div class="section button_section">
+            <button class="color_type_1 big">버튼</button>
+            <button class="color_type_2 big">버튼</button>
+            <button class="color_type_3 big">버튼</button>
+            <button>버튼</button>
+            <button class="color_type_1">버튼</button>
+            <button class="color_type_2">버튼</button>
+            <button class="color_type_3">버튼</button>
+
+            <button class="color_type_4 long">출석</button>
+            <button class="color_type_2 long">연기신청</button>
+            <button class="long">수업예정</button>
+          </div>
+
+          <!-- 아이콘 -->
+          <div class="section icon_section">
+            <em class="caret_down size12"></em>
+            <em class="side size12"></em>
+            <em class="caret-double-left size12"></em>
+            <em class="caret-double-right size12"></em>
+            <em class="care-left size12"></em>
+            <em class="caret-right size12"></em>
+
+            <em class="menu-burger size20"></em>
+            <em class="care-left size20"></em>
+            <em class="calendar-dark size20"></em>
+            <em class="notePencil size20"></em>
+            <em class="headphones size20"></em>
+            <em class="disk size20"></em>
+            <em class="sound size20"></em>
+
+            <em class="global size16"></em>
+            <em class="user size16"></em>
+            <em class="test size16"></em>
+            <em class="calendar size16"></em>
+            <em class="learning size16"></em>
+            <em class="phone-pause size16"></em>
+            <em class="headset size16"></em>
+            <em class="graduation-cap size16"></em>
+            <em class="layers size16"></em>
+            <em class="histogram size16"></em>
+            <em class="chart-tree size16"></em>
+          </div>
+
+          <div class="section input_section">
+            <select>
+              <option>구분</option>
+            </select>
+            <input type="date" max="9999-12-31"/>
+          </div>
+        </fieldset>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

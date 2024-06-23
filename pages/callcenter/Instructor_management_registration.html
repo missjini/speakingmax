@@ -1,0 +1,1308 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>SpeakingMax</title>
+
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/main_style.css" />
+
+    <!-- 공통 js -->
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js" th:src="@{/js/jquery-3.3.1.min.js}"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js" th:src="@{/js/jquery-ui.min.js}"></script>
+    <script type="text/javascript" src="../../js/script.js"></script>
+
+    <!-- 에디터 -->
+    <link rel="stylesheet" href="../../js/editor/trumbowyg.min.css" />
+    <script type="text/javascript" src="../../js/editor/trumbowyg.min.js"></script>
+    <script type="text/javascript" src="../../js/editor/plugins/upload/trumbowyg.upload.min.js"></script>
+</head>
+
+<body>
+    <div class="menu_wrap">
+        <div class="menu_header">
+            <div class="left_wrap">
+                <label>스피킹맥스</label>
+            </div>
+            <div class="right_wrap">
+                <button class="angle-left"></button>
+                <button class="menu-burger"></button>
+            </div>
+        </div>
+        <div class="menu_body">
+            <div class="language">
+                <select>
+                    <option>영어</option>
+                    <option>중국어</option>
+                    <option>일본어</option>
+                    <option>한국어</option>
+                    <option>베트남어</option>
+                    <option>러시아어</option>
+                    <option>스페인어</option>
+                    <option>인도네시아어</option>
+                    <option>독일어</option>
+                    <option>프랑스어</option>
+                </select>
+            </div>
+            <div class="menu_list">
+                <ul class="menu_inner">
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">커뮤니티</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li class="active"><a href="#">관리자게시판</a></li>
+                                <li><a href="#">요청게시판(Q&A)</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">공지사항(KSME)</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">회원관리</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">회원관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">레벨테스트</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">수강LT</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">스케줄관리</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">전체스케줄</a></li>
+                                <li><a href="#">수강중스케줄</a></li>
+                                <li><a href="#">보강스케줄</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">콜센터정보</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">스케줄관리</a></li>
+                                <li><a href="#">강사배정</a></li>
+                                <li><a href="#">강사관리</a></li>
+                                <li><a href="#">강사스케줄</a></li>
+                                <li><a href="#">보강스케줄</a></li>
+                                <li><a href="#">월평가</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">운영관리</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">LMS권한등급관리</a></li>
+                                <li><a href="#">업체등급관리</a></li>
+                                <li><a href="#">휴일관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">통계관리</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">출석관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">기타관리</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">외부과정관리</a></li>
+                                <li><a href="#">교재관리</a></li>
+                                <li><a href="#">조직관리</a></li>
+                                <li><a href="#">코드관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu_footer">
+            <span class="time">PM 18:11:57</span>
+            <span>2024.2.6(화)</span>
+        </div>
+    </div>
+    <div class="main_wrap">
+        <div class="table_header">
+            <div class="title">
+                <p>콜센터정보 / 강사관리 / <b>강사등록</b></p>
+            </div>
+            <div class="userInfo">
+                <p>이지원 본부장(admin)</p>
+                <button class="sign-out">로그아웃</button>
+            </div>
+        </div>
+        <div class="edit_wrap">
+            <div class="edit_title">
+                <label>강사등록</label>
+            </div>
+
+            <div class="input_container">
+                <div class="field_row">
+                    <label>국가</label>
+
+                    <div class="field_list">
+                        <select>
+                            <option>선택</option>
+                            <option>필리핀</option>
+                            <option>미국</option>
+                            <option>중국</option>
+                            <option>일본</option>
+                            <option>스페인</option>
+                            <option>한국</option>
+                            <option>베트남</option>
+                            <option>프랑스</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="field_row">
+                    <label>센터</label>
+
+                    <div class="field_list">
+                        <select>
+                            <option>선택</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="field_row">
+                    <label>근무파트</label>
+
+                    <div class="field_list">
+                        <select>
+                            <option>선택</option>
+                            <option>AM</option>
+                            <option>PM</option>
+                            <option>ALL-TIME</option>
+                        </select>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="input_container">
+                <div class="field_row">
+                    <label>아이디</label>
+                    <div class="field_list type2">
+                        <div class="input_wrap">
+                            <input type="text" />
+                        </div>
+                        <button class="color_type_3">중복검색</button>
+                    </div>
+                </div>
+
+                <div class="field_row">
+                    <label>비밀번호</label>
+                    <div class="field_list">
+                        <div class="input_wrap">
+                            <input type="password" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field_row">
+                    <label>성별</label>
+                    <div class="field_list">
+                        <div class="radio_section">
+                            <div class="radio_wrap">
+                                <input type="radio" id="gender_m" name="radio_gender" checked />
+                                <label for="gender_m">남자</label>
+                            </div>
+                            <div class="radio_wrap">
+                                <input type="radio" id="gender_w" name="radio_gender" />
+                                <label for="gender_w">여자</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field_row">
+                    <label>나이</label>
+                    <div class="field_list">
+                        <div class="input_wrap">
+                            <input type="text" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field_row">
+                    <label>이메일</label>
+                    <div class="field_list">
+                        <div class="input_wrap">
+                            <input type="email" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field_row">
+                    <label>국적</label>
+                    <div class="field_list">
+                        <div class="input_wrap">
+                            <input type="text" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field_row">
+                    <label>학교/전공</label>
+                    <div class="field_list">
+                        <div class="input_wrap">
+                            <input type="text" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="input_container">
+                <div class="field_row">
+                    <label>수업가능</label>
+                    <div class="field_list">
+                        <div class="radio_section">
+                            <div class="radio_wrap">
+                                <input type="radio" id="class_available" name="radio_class" checked />
+                                <label for="class_available">가능</label>
+                            </div>
+                            <div class="radio_wrap">
+                                <input type="radio" id="class_unavailable" name="radio_class" />
+                                <label for="class_unavailable">불가능</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field_row">
+                    <label>미래교육</label>
+                    <div class="field_list">
+                        <div class="radio_section">
+                            <div class="radio_wrap">
+                                <input type="radio" id="future_available" name="radio_future" checked />
+                                <label for="future_available">가능</label>
+                            </div>
+                            <div class="radio_wrap">
+                                <input type="radio" id="future_unavailable" name="radio_future" />
+                                <label for="future_unavailable">불가능</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field_row">
+                    <label>근무시간</label>
+                    <div class="field_list times">
+                        <select>
+                            <option value="">시</option>
+                            <option value="00">00</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                        </select>
+
+                        <select>
+                            <option value="">분</option>
+                            <option value="00">00</option>
+                            <option value="05">05</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                            <option value="35">35</option>
+                            <option value="40">40</option>
+                            <option value="45">45</option>
+                            <option value="50">50</option>
+                            <option value="55">55</option>
+                        </select>
+
+                        <p>~</p>
+
+                        <select>
+                            <option value="">시</option>
+                            <option value="00">00</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                        </select>
+
+                        <select>
+                            <option value="">분</option>
+                            <option value="00">00</option>
+                            <option value="05">05</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                            <option value="35">35</option>
+                            <option value="40">40</option>
+                            <option value="45">45</option>
+                            <option value="50">50</option>
+                            <option value="55">55</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="field_row">
+                    <label>휴식시간1</label>
+                    <div class="field_list times">
+                        <select>
+                            <option value="">시</option>
+                            <option value="00">00</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                        </select>
+
+                        <select>
+                            <option value="">분</option>
+                            <option value="00">00</option>
+                            <option value="05">05</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                            <option value="35">35</option>
+                            <option value="40">40</option>
+                            <option value="45">45</option>
+                            <option value="50">50</option>
+                            <option value="55">55</option>
+                        </select>
+
+                        <p>~</p>
+
+                        <select>
+                            <option value="">시</option>
+                            <option value="00">00</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                        </select>
+
+                        <select>
+                            <option value="">분</option>
+                            <option value="00">00</option>
+                            <option value="05">05</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                            <option value="35">35</option>
+                            <option value="40">40</option>
+                            <option value="45">45</option>
+                            <option value="50">50</option>
+                            <option value="55">55</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="field_row">
+                    <label>휴식시간2</label>
+                    <div class="field_list times">
+                        <select>
+                            <option value="">시</option>
+                            <option value="00">00</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                        </select>
+
+                        <select>
+                            <option value="">분</option>
+                            <option value="00">00</option>
+                            <option value="05">05</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                            <option value="35">35</option>
+                            <option value="40">40</option>
+                            <option value="45">45</option>
+                            <option value="50">50</option>
+                            <option value="55">55</option>
+                        </select>
+
+                        <p>~</p>
+
+                        <select>
+                            <option value="">시</option>
+                            <option value="00">00</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                        </select>
+
+                        <select>
+                            <option value="">분</option>
+                            <option value="00">00</option>
+                            <option value="05">05</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                            <option value="35">35</option>
+                            <option value="40">40</option>
+                            <option value="45">45</option>
+                            <option value="50">50</option>
+                            <option value="55">55</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field_row">
+                    <label>휴식시간3</label>
+                    <div class="field_list times">
+                        <select>
+                            <option value="">시</option>
+                            <option value="00">00</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                        </select>
+
+                        <select>
+                            <option value="">분</option>
+                            <option value="00">00</option>
+                            <option value="05">05</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                            <option value="35">35</option>
+                            <option value="40">40</option>
+                            <option value="45">45</option>
+                            <option value="50">50</option>
+                            <option value="55">55</option>
+                        </select>
+
+                        <p>~</p>
+
+                        <select>
+                            <option value="">시</option>
+                            <option value="00">00</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                        </select>
+
+                        <select>
+                            <option value="">분</option>
+                            <option value="00">00</option>
+                            <option value="05">05</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                            <option value="35">35</option>
+                            <option value="40">40</option>
+                            <option value="45">45</option>
+                            <option value="50">50</option>
+                            <option value="55">55</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field_row">
+                    <label>휴식시간4</label>
+                    <div class="field_list times">
+                        <select>
+                            <option value="">시</option>
+                            <option value="00">00</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                        </select>
+
+                        <select>
+                            <option value="">분</option>
+                            <option value="00">00</option>
+                            <option value="05">05</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                            <option value="35">35</option>
+                            <option value="40">40</option>
+                            <option value="45">45</option>
+                            <option value="50">50</option>
+                            <option value="55">55</option>
+                        </select>
+
+                        <p>~</p>
+
+                        <select>
+                            <option value="">시</option>
+                            <option value="00">00</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                        </select>
+
+                        <select>
+                            <option value="">분</option>
+                            <option value="00">00</option>
+                            <option value="05">05</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                            <option value="35">35</option>
+                            <option value="40">40</option>
+                            <option value="45">45</option>
+                            <option value="50">50</option>
+                            <option value="55">55</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field_row">
+                    <label>휴식시간5</label>
+                    <div class="field_list times">
+                        <select>
+                            <option value="">시</option>
+                            <option value="00">00</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                        </select>
+
+                        <select>
+                            <option value="">분</option>
+                            <option value="00">00</option>
+                            <option value="05">05</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                            <option value="35">35</option>
+                            <option value="40">40</option>
+                            <option value="45">45</option>
+                            <option value="50">50</option>
+                            <option value="55">55</option>
+                        </select>
+
+                        <p>~</p>
+
+                        <select>
+                            <option value="">시</option>
+                            <option value="00">00</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                        </select>
+
+                        <select>
+                            <option value="">분</option>
+                            <option value="00">00</option>
+                            <option value="05">05</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                            <option value="35">35</option>
+                            <option value="40">40</option>
+                            <option value="45">45</option>
+                            <option value="50">50</option>
+                            <option value="55">55</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field_row">
+                    <label>휴식시간6</label>
+                    <div class="field_list times">
+                        <select>
+                            <option value="">시</option>
+                            <option value="00">00</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                        </select>
+
+                        <select>
+                            <option value="">분</option>
+                            <option value="00">00</option>
+                            <option value="05">05</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                            <option value="35">35</option>
+                            <option value="40">40</option>
+                            <option value="45">45</option>
+                            <option value="50">50</option>
+                            <option value="55">55</option>
+                        </select>
+
+                        <p>~</p>
+
+                        <select>
+                            <option value="">시</option>
+                            <option value="00">00</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                        </select>
+
+                        <select>
+                            <option value="">분</option>
+                            <option value="00">00</option>
+                            <option value="05">05</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                            <option value="35">35</option>
+                            <option value="40">40</option>
+                            <option value="45">45</option>
+                            <option value="50">50</option>
+                            <option value="55">55</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field_row">
+                    <label>휴식시간7</label>
+                    <div class="field_list times">
+                        <select>
+                            <option value="">시</option>
+                            <option value="00">00</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                        </select>
+
+                        <select>
+                            <option value="">분</option>
+                            <option value="00">00</option>
+                            <option value="05">05</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                            <option value="35">35</option>
+                            <option value="40">40</option>
+                            <option value="45">45</option>
+                            <option value="50">50</option>
+                            <option value="55">55</option>
+                        </select>
+
+                        <p>~</p>
+
+                        <select>
+                            <option value="">시</option>
+                            <option value="00">00</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                        </select>
+
+                        <select>
+                            <option value="">분</option>
+                            <option value="00">00</option>
+                            <option value="05">05</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                            <option value="35">35</option>
+                            <option value="40">40</option>
+                            <option value="45">45</option>
+                            <option value="50">50</option>
+                            <option value="55">55</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field_row">
+                    <label>휴식시간8</label>
+                    <div class="field_list times">
+                        <select>
+                            <option value="">시</option>
+                            <option value="00">00</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                        </select>
+
+                        <select>
+                            <option value="">분</option>
+                            <option value="00">00</option>
+                            <option value="05">05</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                            <option value="35">35</option>
+                            <option value="40">40</option>
+                            <option value="45">45</option>
+                            <option value="50">50</option>
+                            <option value="55">55</option>
+                        </select>
+
+                        <p>~</p>
+
+                        <select>
+                            <option value="">시</option>
+                            <option value="00">00</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                        </select>
+
+                        <select>
+                            <option value="">분</option>
+                            <option value="00">00</option>
+                            <option value="05">05</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                            <option value="35">35</option>
+                            <option value="40">40</option>
+                            <option value="45">45</option>
+                            <option value="50">50</option>
+                            <option value="55">55</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input_container">
+                <div class="field_row">
+                    <table>
+                        <colgroup>
+                            <col width="30%" />
+                            <col width="*" />
+                            <col width="*" />
+                            <col width="*" />
+                            <col width="*" />
+                            <col width="*" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>Teacher Evaluation</th>
+                                <th>A</th>
+                                <th>B</th>
+                                <th>C</th>
+                                <th>D</th>
+                                <th>E</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>발음</td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="pronunciation" checked />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="pronunciation" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="pronunciation" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="pronunciation" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="pronunciation" />
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>교수법</td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="didactics" checked />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="didactics" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="didactics" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="didactics" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="didactics" />
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>근무태도</td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="work_attitude" checked />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="work_attitude" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="work_attitude" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="work_attitude" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="work_attitude" />
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>교재인지</td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="textbook" checked />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="textbook" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="textbook" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="textbook" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="textbook" />
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>응대능력</td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="response_ability" checked />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="response_ability" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="response_ability" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="response_ability" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="response_ability" />
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>클레임</td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="claim" checked />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="claim" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="claim" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="claim" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio_wrap">
+                                        <input type="radio" name="claim" />
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="field_row">
+                    <label>메모</label>
+                    <div class="field_list">
+                        <textarea></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button_container">
+                <button class="color_type_1 big">등록</button>
+                <button class="big">취소</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

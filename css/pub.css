@@ -1,0 +1,73 @@
+/* CSS 퍼블전용 */
+
+.pub .main_wrap {
+    /* background-color: #101013; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pub fieldset {
+    display: flex;
+}
+
+.pub .section {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px dashed #f25f33;
+}
+
+.pub .section.icon_section {
+    width: 230px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.pub em+em {
+    margin-left: 5px;
+}
+
+.pub fieldset .checked_wrap+.checked_wrap,
+.pub fieldset select+input,
+.pub fieldset input+input,
+.pub fieldset button+button {
+    margin-top: 10px;
+}
+
+.pub .radio_section {
+    height: auto;
+}
+
+.pub .radio_wrap+.radio_wrap {
+    margin-top: 3px;
+}
+
+.pub table th,
+.pub .category {
+    background-color: lightgray;
+}
+
+.pub .category td {
+    text-align: center;
+    font-weight: bold;
+}
+
+.pub table {
+    border-collapse: collapse;
+}
+
+.pub table th,
+.pub table td {
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.pub .table_list {
+    display: flex;
+    align-items: flex-start;
+}
+
+.pub .table_list table+table {
+    margin-left: 10px;
+}

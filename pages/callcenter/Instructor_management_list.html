@@ -1,0 +1,470 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>SpeakingMax</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/main_style.css" />
+
+    <!-- 공통 js -->
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js" th:src="@{/js/jquery-3.3.1.min.js}"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js" th:src="@{/js/jquery-ui.min.js}"></script>
+    <script type="text/javascript" src="../../js/script.js"></script>
+</head>
+
+<body>
+    <div class="menu_wrap">
+        <div class="menu_header">
+            <div class="left_wrap">
+                <label>스피킹맥스</label>
+            </div>
+            <div class="right_wrap">
+                <button class="angle-left"></button>
+                <button class="menu-burger"></button>
+            </div>
+        </div>
+        <div class="menu_body">
+            <div class="language">
+                <select>
+                    <option>영어</option>
+                    <option>중국어</option>
+                    <option>일본어</option>
+                    <option>한국어</option>
+                    <option>베트남어</option>
+                    <option>러시아어</option>
+                    <option>스페인어</option>
+                    <option>인도네시아어</option>
+                    <option>독일어</option>
+                    <option>프랑스어</option>
+                </select>
+            </div>
+            <div class="menu_list">
+                <ul class="menu_inner">
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">커뮤니티</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li class="active"><a href="#">관리자게시판</a></li>
+                                <li><a href="#">요청게시판(Q&A)</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">공지사항(KSME)</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">회원관리</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">회원관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">레벨테스트</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">수강LT</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">스케줄관리</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">전체스케줄</a></li>
+                                <li><a href="#">수강중스케줄</a></li>
+                                <li><a href="#">보강스케줄</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">콜센터정보</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">스케줄관리</a></li>
+                                <li><a href="#">강사배정</a></li>
+                                <li><a href="#">강사관리</a></li>
+                                <li><a href="#">강사스케줄</a></li>
+                                <li><a href="#">보강스케줄</a></li>
+                                <li><a href="#">월평가</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">운영관리</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">LMS권한등급관리</a></li>
+                                <li><a href="#">업체등급관리</a></li>
+                                <li><a href="#">휴일관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">통계관리</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">출석관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="arrow"></em>
+                        <a href="#">기타관리</a>
+                        <div class="menu_sub">
+                            <ul class="sub_inner">
+                                <li><a href="#">외부과정관리</a></li>
+                                <li><a href="#">교재관리</a></li>
+                                <li><a href="#">조직관리</a></li>
+                                <li><a href="#">코드관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu_footer">
+            <span class="time">PM 18:11:57</span>
+            <span>2024.2.6(화)</span>
+        </div>
+    </div>
+    <div class="main_wrap">
+        <div class="table_header">
+            <div class="title">
+                <p>콜센터정보 / 강사관리</p>
+            </div>
+            <div class="userInfo">
+                <p>이지원 본부장(admin)</p>
+                <button class="sign-out">로그아웃</button>
+            </div>
+        </div>
+        <div class="table_wrap">
+            <div class="search_wrap">
+                <div class="search_items_list">
+                    <div class="search_items">
+                        <label>상세검색</label>
+                        <div class="item_list">
+                            <select>
+                                <option value="t_name">강사명</option>
+                                <option value="t_tage">나이</option>
+                                <option value="t_cont">국적</option>
+                            </select>
+
+                            <input type="text" />
+                        </div>
+                    </div>
+
+                    <div class="search_items">
+                        <label>수업시간</label>
+                        <div class="item_list">
+                            <select>
+                                <option value="">시</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                            </select>
+
+                            <select>
+                                <option value="">분</option>
+                                <option value="00">00</option>
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                            </select>
+
+                            <span>~</span>
+
+                            <select>
+                                <option value="">시</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                            </select>
+
+                            <select>
+                                <option value="">분</option>
+                                <option value="00">00</option>
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="search_items">
+                        <label>근무파트</label>
+                        <div class="item_list">
+                            <select>
+                                <option value="">전체</option>
+                                <option value="001">AM</option>
+                                <option value="002">PM</option>
+                                <option value="003">ALL-TIME</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="search_items">
+                        <label>삭제강사</label>
+                        <div class="item_list">
+                            <div class="radio_list">
+                                <div class="radio_wrap">
+                                    <input type="radio" id="N" name="isInstructor" />
+                                    <label for="N">N </label>
+                                </div>
+                                <div class="radio_wrap">
+                                    <input type="radio" id="Y" name="isInstructor" />
+                                    <label for="Y">Y</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="button_wrap">
+                    <button class="btn_search">검색</button>
+                </div>
+            </div>
+            <div class="list_wrap">
+                <div class="button_wrap">
+                    <div class="left_wrap">
+                        <button>엑셀저장</button>
+                    </div>
+                    <div class="right_wrap">
+                        <button class="color_type_2">강사등록</button>
+                        <button class="color_type_2">강사삭제</button>
+                    </div>
+                </div>
+
+                <table>
+                    <colgroup>
+                        <col width="42px" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="*" />
+                        <col width="36px" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>센터</th>
+                            <th>근무파트</th>
+                            <th>강사명</th>
+                            <th>ID</th>
+                            <th>비밀번호</th>
+                            <th>근무시간</th>
+                            <th>휴식시간1</th>
+                            <th>휴식시간2</th>
+                            <th>휴식시간3</th>
+                            <th class="yellow">발음</th>
+                            <th class="yellow">교수법</th>
+                            <th class="yellow">근무태도</th>
+                            <th class="yellow">교재인지</th>
+                            <th class="yellow">응대능력</th>
+                            <th class="yellow">클레임</th>
+                            <th>국적</th>
+                            <th>학교/전공</th>
+                            <th>스케쥴</th>
+                            <th>
+                                <div class="checked_wrap">
+                                    <input type="checkbox" id="noLabel" class="no-label" />
+                                    <label for="noLabel">노라벨</label>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="active">
+                            <td>004</td>
+                            <td>센터</td>
+                            <td>근무파트</td>
+                            <td>강사명</td>
+                            <td>ID</td>
+                            <td>비밀번호</td>
+                            <td>근무시간</td>
+                            <td>휴식시간1</td>
+                            <td>휴식시간2</td>
+                            <td>휴식시간3</td>
+                            <td>발음</td>
+                            <td>교수법</td>
+                            <td>근무태도</td>
+                            <td>교재인지</td>
+                            <td>응대능력</td>
+                            <td>클레임</td>
+                            <td>국적</td>
+                            <td>학교/전공</td>
+                            <td><button class="calendar">캘린더</button></td>
+                            <td>
+                                <div class="checked_wrap">
+                                    <input type="checkbox" id="noLabel1" class="no-label" checked />
+                                    <label for="noLabel1">노라벨</label>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>003</td>
+                            <td>센터</td>
+                            <td>근무파트</td>
+                            <td>강사명</td>
+                            <td>ID</td>
+                            <td>비밀번호</td>
+                            <td>근무시간</td>
+                            <td>휴식시간1</td>
+                            <td>휴식시간2</td>
+                            <td>휴식시간3</td>
+                            <td>발음</td>
+                            <td>교수법</td>
+                            <td>근무태도</td>
+                            <td>교재인지</td>
+                            <td>응대능력</td>
+                            <td>클레임</td>
+                            <td>국적</td>
+                            <td>학교/전공</td>
+                            <td><button class="calendar">캘린더</button></td>
+                            <td>
+                                <div class="checked_wrap">
+                                    <input type="checkbox" id="noLabel1" class="no-label" />
+                                    <label for="noLabel1">노라벨</label>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>002</td>
+                            <td>센터</td>
+                            <td>근무파트</td>
+                            <td>강사명</td>
+                            <td>ID</td>
+                            <td>비밀번호</td>
+                            <td>근무시간</td>
+                            <td>휴식시간1</td>
+                            <td>휴식시간2</td>
+                            <td>휴식시간3</td>
+                            <td>발음</td>
+                            <td>교수법</td>
+                            <td>근무태도</td>
+                            <td>교재인지</td>
+                            <td>응대능력</td>
+                            <td>클레임</td>
+                            <td>국적</td>
+                            <td>학교/전공</td>
+                            <td><button class="calendar">캘린더</button></td>
+                            <td>
+                                <div class="checked_wrap">
+                                    <input type="checkbox" id="noLabel1" class="no-label" />
+                                    <label for="noLabel1">노라벨</label>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>001</td>
+                            <td>센터</td>
+                            <td>근무파트</td>
+                            <td>강사명</td>
+                            <td>ID</td>
+                            <td>비밀번호</td>
+                            <td>근무시간</td>
+                            <td>휴식시간1</td>
+                            <td>휴식시간2</td>
+                            <td>휴식시간3</td>
+                            <td>발음</td>
+                            <td>교수법</td>
+                            <td>근무태도</td>
+                            <td>교재인지</td>
+                            <td>응대능력</td>
+                            <td>클레임</td>
+                            <td>국적</td>
+                            <td>학교/전공</td>
+                            <td><button class="calendar">캘린더</button></td>
+                            <td>
+                                <div class="checked_wrap">
+                                    <input type="checkbox" id="noLabel1" class="no-label" />
+                                    <label for="noLabel1">노라벨</label>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <div class="navi_wrap">
+                    <button class="double-left">first</button>
+                    <button class="prev">prev</button>
+                    <ul>
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                    </ul>
+                    <button class="next">next</button>
+                    <button class="double-right">last</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
